@@ -19,17 +19,18 @@ public class MathTools {
         return num / factor;
     }
 
-    Point a = Point.Point(1, 2);
-    Point b = Point.Point(2, 3);
-
-    public static int distance(Point a, Point b) {
-        int dis = Math.sqrt(Math.pow((a.xCoord - b.xCoord), 2.0) + Math.pow((a.yCoord - b.yCoord), 2.0));
+    public static double distance(Point a, Point b) {
+        double dx = a.getX() - b.getX();
+        double dy = a.getY() - b.getY();
+        double dis = Math.sqrt(Math.pow(dx, 2.0) + Math.pow(dy, 2.0));
+        dis = round(dis, 3);
         return dis;
     }
 
-    public static double slope(Point a, Point b){
-        int m = ((a.yCoord-b.yCoord)/(a.xCoord-b.xCoord))
-        return m; 
+    public static double slope(Point a, Point b) {
+        double m = ((double) (a.getY() - b.getY()) / (a.getX() - b.getX()));
+        m = round(m, 3);
+        return m;
     }
 
 }

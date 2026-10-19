@@ -5,6 +5,9 @@ public class App {
 
         System.out.println(MathTools.round(1.175, 2));
 
-        System.out.println(MathTools.distance(Point.a, Point.b));
+        Point a = new Point(3, 5);
+        Point b = new Point(5, 9);
+        System.out.println(MathTools.distance(a, b));
+        System.out.println(MathTools.slope(a, b));
     }
 }
