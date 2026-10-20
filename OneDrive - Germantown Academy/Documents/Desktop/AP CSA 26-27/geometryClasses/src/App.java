@@ -14,5 +14,8 @@ public class App {
         Circle circ = new Circle(MathTools.randInt(1, 10), a);
         System.out.println(circ.getRadius());
         System.out.println(circ.getArea());
+
+        Rectangle rect = new Rectangle(b, MathTools.randInt(1, 10), MathTools.randInt(1, 10));
+        System.out.println(rect.getArea());
     }
 }
