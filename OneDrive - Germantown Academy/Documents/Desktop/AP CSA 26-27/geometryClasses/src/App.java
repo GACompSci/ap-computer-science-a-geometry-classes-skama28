@@ -19,5 +19,11 @@ public class App {
 
         Rectangle rect = new Rectangle(b, MathTools.randInt(1, 10), MathTools.randInt(1, 10));
         System.out.println(rect.getArea());
+
+        Point point1 = new Point(MathTools.randInt(1, 10), MathTools.randInt(1, 10));
+        Point point2 = new Point(MathTools.randInt(1, 10), MathTools.randInt(1, 10));
+        Point point3 = new Point(MathTools.randInt(1, 10), MathTools.randInt(1, 10));
+        Triangle tri = new Triangle(point1, point2, point3); 
+        System.out.println(tri.getArea());
     }
 }
