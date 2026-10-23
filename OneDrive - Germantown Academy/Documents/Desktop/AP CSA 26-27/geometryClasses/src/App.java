@@ -3,6 +3,8 @@ public class App {
         // Create your objects and call their method here
         System.out.println(MathTools.randInt(1, 10));
 
+        //test comment
+
         System.out.println(MathTools.round(1.175, 2));
 
         Point a = new Point(MathTools.randInt(1, 10), MathTools.randInt(1, 10));
